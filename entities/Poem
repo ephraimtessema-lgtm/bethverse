@@ -1,0 +1,50 @@
+{
+  "name": "Poem",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Title of the poem"
+    },
+    "content": {
+      "type": "string",
+      "description": "The poem content in HTML format"
+    },
+    "plain_text": {
+      "type": "string",
+      "description": "Plain text version for search and stats"
+    },
+    "collection": {
+      "type": "string",
+      "description": "Collection name the poem belongs to"
+    },
+    "is_favorite": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether the poem is favorited"
+    },
+    "is_archived": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether the poem is archived"
+    },
+    "word_count": {
+      "type": "number",
+      "default": 0,
+      "description": "Word count of the poem"
+    },
+    "char_count": {
+      "type": "number",
+      "default": 0,
+      "description": "Character count of the poem"
+    },
+    "edit_count": {
+      "type": "number",
+      "default": 0,
+      "description": "Number of times edited"
+    }
+  },
+  "required": [
+    "title"
+  ]
+}

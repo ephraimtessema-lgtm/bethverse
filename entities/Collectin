@@ -1,0 +1,25 @@
+{
+  "name": "Collection",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Name of the collection"
+    },
+    "description": {
+      "type": "string",
+      "description": "Optional description"
+    },
+    "color": {
+      "type": "string",
+      "description": "Color identifier for the collection"
+    },
+    "icon": {
+      "type": "string",
+      "description": "Icon name for the collection"
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "BethVerse",
+    "slug": "bethverse",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "bethverse",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": false,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0A0E1A"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.bethverse.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png",
+        "backgroundColor": "#0A0E1A"
+      },
+      "package": "com.bethverse.app",
+      "softwareKeyboardLayoutMode": "pan",
+      "statusBar": {
+        "backgroundColor": "#0A0E1A",
+        "barStyle": "light-content",
+        "translucent": false
+      },
+      "permissions": [
+        "CAMERA",
+        "READ_MEDIA_IMAGES",
+        "USE_BIOMETRIC",
+        "USE_FINGERPRINT"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow BethVerse to pick poem images for text scanning.",
+          "cameraPermission": "Allow BethVerse to photograph poems for text scanning."
+        }
+      ],
+      "expo-sqlite",
+      "expo-asset",
+      "expo-font",
+      "expo-splash-screen",
+      "./plugins/withTessdata"
+    ]
+  }
+}
